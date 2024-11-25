@@ -1,0 +1,24 @@
+<div id="<%= dom_id contacts_db %>">
+  <table class="table table-striped text-center align-middle" style="border: none; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="border: none;">Name</th>
+        <th style="border: none;">Email</th>
+        <th style="border: none;">Phone</th>
+        <th style="border: none;">LinkedIn</th>
+        <th style="border: none; text-align: right;"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: none;"><%= contacts_db.name %></td>
+        <td style="border: none;"><%= contacts_db.email %></td>
+        <td style="border: none;"><%= contacts_db.phone %></td>
+        <td style="border: none;"><%= contacts_db.linkedin %></td>
+        <td style="border: none; text-align: right;">
+          <%= link_to "View", contacts_db, class: "btn btn-info" %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

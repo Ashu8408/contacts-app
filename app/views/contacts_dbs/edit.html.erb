@@ -1,0 +1,12 @@
+<% content_for :title, "Editing contacts db" %>
+
+<h1>Editing contacts db</h1>
+
+<%= render "form", contacts_db: @contacts_db %>
+
+<br>
+
+<div>
+  <%= link_to "Show this contacts db", @contacts_db, class: "btn btn-info" %> |
+  <%= link_to "Back to contacts dbs", contacts_dbs_path, class: "btn btn-secondary" %>
+</div>

@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Contacts dbs" %>
+
+<h1>Contacts List</h1>
+
+<%= link_to "New contact", new_contacts_db_path, class: "btn btn-success mb-3" %>
+
+<div id="contacts_dbs">
+  <% @contacts_dbs.each do |contacts_db| %>
+    <div class="d-flex align-items-center mb-2">
+      <div class="flex-grow-1">
+        <%= render contacts_db %>
+      </div>     
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @contacts_db %>
+
+<div class="d-flex gap-2">
+  <%= link_to "Back", contacts_dbs_path, class: "btn btn-secondary" %>
+  
+  <%= link_to "Edit", edit_contacts_db_path(@contacts_db), class: "btn btn-warning" %>
+  
+  <%= button_to "Delete", @contacts_db, method: :delete, class: "btn btn-danger", 
+    data: { confirm: "Are you sure you want to delete this contact? This action cannot be undone." } %>
+</div>
